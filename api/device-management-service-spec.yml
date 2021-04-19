@@ -1,0 +1,95 @@
+openapi: 3.0.1
+info:
+  title: Device Management Service
+  description: API to manage remote devices
+  version: 1.0.0
+servers:
+  - url: http://hslbc-dms:8080/api
+  - url: https://hslbc-dms:8080/api
+tags:
+  - name: DeviceManagementService
+paths:
+  /hslbc-dms/register-device/:
+    post:
+      summary: Register a new device on the service
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterDeviceRequest'
+        required: false
+      responses:
+        201:
+          description: Device registered and created
+          content:
+            application/json:
+              schema:
+                type: string
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestResponse'
+        404:
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundResponse'
+        500:
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerErrorResponse'
+      x-codegen-request-body-name: registerDeviceRequestBody
+components:
+  schemas:
+    RegisterDeviceRequest:
+      required:
+        - deviceId
+      type: object
+      properties:
+        deviceId:
+          type: string
+          description: The unique ID of the device being registered.
+          example: ""
+    BadRequestResponse:
+      type: string
+      description: A standard http [400](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
+        Bad Request status response with an accompanying error message, usually caused
+        by a malformed request by the API caller
+      example: A required field is not present in the http request
+    NotFoundResponse:
+      type: string
+      description: A standard http [404](https://en.wikipedia.org/wiki/HTTP_404) Not
+        Found status response with an accompanying error message, usually caused by
+        a search operation that produced no results for the criteria specified on
+        request data
+      example: No process with the specified id was found
+    InternalServerErrorResponse:
+      type: string
+      description: A standard http [500](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)
+        Internal Server Error status response with an accompanying error message,
+        caused by a server-side error condition
+      example: Request unsuccessful due to an internal server error
+  responses:
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BadRequestResponse'
+    InternalServerError:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalServerErrorResponse'
+    NotFound:
+      description: Not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/NotFoundResponse'
