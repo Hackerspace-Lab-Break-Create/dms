@@ -17,7 +17,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/RegisterDeviceRequest'
-        required: false
+        required: true
       responses:
         201:
           description: Device registered and created
@@ -54,7 +54,9 @@ components:
         deviceId:
           type: string
           description: The unique ID of the device being registered.
-          example: ""
+          example:
+            - "UniqueBatata"
+            - "f84430a8-7372-4322-b69e-6423882545e3"
     BadRequestResponse:
       type: string
       description: A standard http [400](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
