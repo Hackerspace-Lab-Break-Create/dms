@@ -1,0 +1,5 @@
+org/hackerspace/lbc/dmsserver/DmsServerApplication.class
+org/hackerspace/lbc/api/ApiUtil.class
+org/hackerspace/lbc/model/RegisterDeviceRequest.class
+org/hackerspace/lbc/dmsserver/rest/DmsControler.class
+org/hackerspace/lbc/api/HslbcDmsApi.class
