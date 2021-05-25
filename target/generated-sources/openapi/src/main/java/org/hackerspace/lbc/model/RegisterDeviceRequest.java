@@ -10,7 +10,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
 /**
  * RegisterDeviceRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-25T17:13:30.680Z[Atlantic/Azores]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-25T18:31:15.045Z[Atlantic/Azores]")
 public class RegisterDeviceRequest   {
   @JsonProperty("deviceId")
   private String deviceId;
