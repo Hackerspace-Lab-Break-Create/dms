@@ -18,7 +18,7 @@ import springfox.documentation.annotations.ApiIgnore;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-04-20T22:11:08.905532Z[Atlantic/Azores]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-25T11:28:05.678Z[Atlantic/Azores]")
 @Api(value = "hslbc-dms", description = "the hslbc-dms API")
 public interface HslbcDmsApi {
 
