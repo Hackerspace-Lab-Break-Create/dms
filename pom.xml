@@ -112,8 +112,10 @@
                 <version>3.0.0</version>
                 <executions>
                     <execution>
+                        <phase>package</phase>
                         <goals>
                             <goal>build</goal>
+                            <!--<goal>dockerBuild</goal>-->
                         </goals>
                     </execution>
                 </executions>
@@ -127,6 +129,7 @@
                     </extraDirectories>
                     <container>
                         <entrypoint>java,-jar,-Dspring.profiles.active=default,/app.war</entrypoint>
+                        <ports>6060</ports>
                     </container>
 
                     <from>
@@ -134,6 +137,7 @@
                     </from>
                     <to>
                         <image>docker.io/aliasunknown/my-app</image>
+
                     </to>
                 </configuration>
             </plugin>
