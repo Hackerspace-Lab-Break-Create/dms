@@ -16,7 +16,7 @@
     <description>Device Management Service</description>
     <properties>
         <java.version>1.8</java.version>
-        <openapi-generator-version>5.0.1</openapi-generator-version>
+        <openapi-generator-version>5.1.0</openapi-generator-version>
 
     </properties>
     <dependencies>
