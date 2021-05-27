@@ -99,7 +99,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <mainClass>org.hackerspace.lbc.dmsserver.DmsServerApplication</mainClass>
+                            <mainClass>org.hlbc.dmsserver.DmsServerApplication</mainClass>
                             <outputDirectory>${project.basedir}/docker</outputDirectory>
 							<finalName>app</finalName>
                         </configuration>

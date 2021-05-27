@@ -1,4 +1,4 @@
-package org.hackerspace.lbc.dmsserver;
+package org.hlbc.dmsserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

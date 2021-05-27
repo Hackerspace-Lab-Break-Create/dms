@@ -1,4 +1,4 @@
-package org.hackerspace.lbc.dmsserver.model;
+package org.hlbc.dmsserver.model;
 
 import lombok.Data;
 

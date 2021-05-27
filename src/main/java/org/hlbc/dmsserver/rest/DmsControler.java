@@ -1,4 +1,4 @@
-package org.hackerspace.lbc.dmsserver.rest;
+package org.hlbc.dmsserver.rest;
 
 import org.hackerspace.lbc.api.HslbcDmsApi;
 import org.hackerspace.lbc.model.RegisterDeviceRequest;
