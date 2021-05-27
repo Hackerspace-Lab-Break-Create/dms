@@ -16,7 +16,7 @@
     <description>Device Management Service</description>
     <properties>
         <java.version>1.8</java.version>
-        <openapi-generator-version>5.0.1</openapi-generator-version>
+        <openapi-generator-version>5.1.0</openapi-generator-version>
 
     </properties>
     <dependencies>
@@ -165,8 +165,8 @@
                                 <dateLibrary>java8</dateLibrary>
                                 <interfaceOnly>true</interfaceOnly>
                                 <skipDefaultInterface>true</skipDefaultInterface>
-                                <modelPackage>org.hackerspace.lbc.model</modelPackage>
-                                <apiPackage>org.hackerspace.lbc.api</apiPackage>
+                                <modelPackage>org.hlbc.dms.server.model</modelPackage>
+                                <apiPackage>org.hlbc.dms.server.api</apiPackage>
                                 <useBeanValidation>false</useBeanValidation>
                             </configOptions>
                         </configuration>

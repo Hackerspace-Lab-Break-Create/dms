@@ -1,7 +1,8 @@
 package org.hlbc.dms.server.rest;
 
-import org.hackerspace.lbc.api.HslbcDmsApi;
-import org.hackerspace.lbc.model.RegisterDeviceRequest;
+
+import org.hlbc.dms.server.api.HslbcDmsApi;
+import org.hlbc.dms.server.model.RegisterDeviceRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
