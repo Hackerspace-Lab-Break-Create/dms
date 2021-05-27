@@ -1,4 +1,4 @@
-package org.hlbc.dmsserver.model;
+package org.hlbc.dms.server.model;
 
 import lombok.Data;
 

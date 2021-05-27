@@ -99,7 +99,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <mainClass>org.hlbc.dmsserver.DmsServerApplication</mainClass>
+                            <mainClass>org.hlbc.dms.server.DmsServerApplication</mainClass>
                             <outputDirectory>${project.basedir}/docker</outputDirectory>
 							<finalName>app</finalName>
                         </configuration>
